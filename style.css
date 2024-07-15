@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+}
+
+.root {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 15px;
+    width: 85%;
+    max-width: 1000px;
+}
+
+.zag {
+    text-align: center;
+    margin-top: -60px;
+    color: #f1f1f1;
+    font-size: 26px;
+}
+
+.container, .cub {
+    border: 1px solid #444;
+    padding: 15px;
+    background-color: #2a2a2a;
+}
+
+.container {
+    grid-column: 1 / 2;
+    color: #ffffff;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+}
+
+.cub {
+    grid-column: 2 / 3;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+}
+
+.stat {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.gameHistory {
+    grid-column: 3 / 4;
+    color: #ffffff;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    height: 430px;
+    padding: 15px;
+}
+
+table {
+    font-size: 18px;
+    width: 100%;
+}
+
+.statis {
+    color: #ffffff;
+    border-bottom: 1px solid #888;
+    font-weight: bold;
+}
+
+.gameResult, .gameHistory {
+    color: #00ff99;
+}
+
+.res {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.sei {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#whoWins {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#roundHistory {
+    color: #ffffff;
+}
+
+#area {
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    cursor: pointer;
+    user-select: none;
+    color: #00ff99;
+    border-radius: 5px;
+}
+
+#currentPl {
+    color: #ff6666;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.currenPlayer {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.his {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.win {
+    background-color: #32b397; 
+}
+
+@media (max-width: 768px) {
+    .root {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .container, .cub, .gameHistory {
+        width: 300px;
+        max-width: 100%;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #area {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+    }
+
+    .currenPlayer {
+        font-size: 20px;
+    }
+
+    #currentPl {
+        font-size: 24px;
+    }
+
+    #whoWins {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    .his {
+        font-size: 20px;
+    }
+}
